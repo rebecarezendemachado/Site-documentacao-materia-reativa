@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matéria Reativa | Documentação</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         MENU LATERAL
+    ====================================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo-area">
+            <div class="logo-icon">
+                <i class="fa-solid fa-flask"></i>
+            </div>
+
+            <div class="logo-text">
+                <h2>Matéria</h2>
+                <span>Reativa</span>
+            </div>
+        </div>
+
+        <nav class="menu">
+
+            <a href="#inicio" class="menu-link active">
+                <i class="fa-solid fa-house"></i>
+                <span>Início</span>
+            </a>
+
+            <a href="#documentacoes" class="menu-link">
+                <i class="fa-solid fa-folder-open"></i>
+                <span>Documentações</span>
+            </a>
+
+            <a href="#projeto" class="menu-link">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Sobre o projeto</span>
+            </a>
+
+            <a href="#equipe" class="menu-link">
+                <i class="fa-solid fa-users"></i>
+                <span>Equipe</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <i class="fa-solid fa-building-columns"></i>
+
+            <div>
+                <strong>SENAI</strong>
+                <small>Desenvolvimento de Sistemas</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
+    <main class="main">
+
+        <!-- CABEÇALHO -->
+
+        <header class="header">
+
+            <button class="menu-button" id="menuButton">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="header-title">
+                <span>DOCUMENTAÇÃO</span>
+                <h1>Matéria Reativa</h1>
+            </div>
+
+            <div class="header-icon">
+                <i class="fa-solid fa-flask"></i>
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             INÍCIO
+        ================================================== -->
+
+        <section id="inicio" class="hero section">
+
+            <div class="hero-content">
+
+                <h2>
+                    Toda a documentação do
+                    <strong>Matéria Reativa</strong>
+                    em um só lugar.
+                </h2>
+
+                <p>
+                    Consulte os documentos, protótipos, requisitos
+                    e materiais desenvolvidos durante a construção
+                    do projeto.
+                </p>
+
+                <a href="#documentacoes" class="primary-button">
+                    Ver documentações
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="flask-circle">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DOCUMENTAÇÕES
+        ================================================== -->
+
+        <section id="documentacoes" class="section">
+
+            <div class="section-header">
+                <span class="section-label">ARQUIVOS DO PROJETO</span>
+
+                <h2>Documentações</h2>
+
+                <p>
+                    Encontre todos os documentos utilizados
+                    durante o desenvolvimento.
+                </p>
+            </div>
+
+
+            <!-- BUSCA E FILTROS -->
+
+            <div class="tools">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Pesquisar documentação..."
+                    >
+                </div>
+
+                
+
+            </div>
+
+
+            <!-- CARDS -->
+
+            <div class="documents-grid" id="documentsGrid">
+
+                <article class="document-card" data-category="planejamento">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Planejamento
+                        </span>
+                    </div>
+
+                    <h3>Kanban</h3>
+
+                    <p>
+                        Organização das tarefas, acompanhamento do andamento do projeto, divisão 
+                        das atividades da equipe e controle das etapas de desenvolvimento.
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            LINK
+                        </span>
+
+
+                        <a href="https://planner.cloud.microsoft/webui/plan/4enkDAJI30eWASTphyeIF2QAAbsk/view/board?tid=b1051c4b-3b94-41ab-9441-e73a72342fdd"
+                         target="_blank" 
+                            class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+                 <article class="document-card" data-category="planejamento">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Design
+                        </span>
+                    </div>
+
+                    <h3>Figma Atual</h3>
+
+                    <p>
+                        Protótipo atualizado do sistema, apresentando a interface, organização 
+                        das telas, funcionalidades e identidade visual definidas para o projeto.
+
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            LINK
+                        </span>
+
+
+                        <a href="https://www.figma.com/design/HVKezqxEobMvmFc5nlAvuR/TCC?node-id=0-1&p=f&t=kGu4sFha9MNQjz1O-0"
+                         target="_blank" 
+                            class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+                <article class="document-card" data-category="planejamento">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Design
+                        </span>
+                    </div>
+
+                    <h3>Figma Antigo</h3>
+
+                    <p>
+                        Protótipo inicial do sistema, desenvolvido para definir as primeiras 
+                        ideias de interface, organização das telas e estrutura visual do projeto.
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            LINK
+                        </span>
+
+
+                        <a href="https://www.figma.com/design/RSzlspeiR6D2h20iJaudOF/Prototipo-figma?node-id=0-1&p=f&t=0MyQ43FTCe1nD6Co-0"
+                         target="_blank" 
+                            class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+                <article class="document-card" data-category="tecnico">
+
+                    <div class="document-top">
+                        <div class="document-icon blue-light">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Planejamento
+                        </span>
+                    </div>
+
+                    <h3>1. Critérios tranversais - Plano de projetos</h3>
+
+                    <p>
+                        Planejamento e organização do projeto, com pesquisas sobre o tema,
+                         definição de estratégias, levantamento de informações e estruturação 
+                         das etapas de desenvolvimento.
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            <i class="fa-solid fa-file-pdf"></i>
+                            PDF
+                        </span>
+
+                        <a href="documentos/1. CRITÉRIOS TRANSVERSAIS - PLANO DE PROJETOS..pdf"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+                <article class="document-card" data-category="tecnico">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Design
+                        </span>
+                    </div>
+
+                    <h3>2. Proposta e Croqui</h3>
+
+                    <p>
+                        Definição da proposta do projeto, organização das ideias e 
+                        representação inicial da estrutura e funcionalidades do sistema.
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            <i class="fa-solid fa-file-pdf"></i>
+                            PDF
+                        </span>
+
+                        <a href="documentos/2. PROPOSTA E CROQUI (1).pdf"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+                <article class="document-card" data-category="design">
+
+                    <div class="document-top">
+                        <div class="document-icon blue-light">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Técnico
+                        </span>
+                    </div>
+
+                    <h3>3. Cronograma </h3>
+
+                    <p>
+                       Planejamento das atividades, organização dos prazos, distribuição da 
+                       carga horária da equipe e acompanhamento do desenvolvimento do projeto.
+
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            <i class="fa-solid fa-file-pdf"></i>
+                            PDF
+                        </span>
+
+                        <a href="documentos/Cronograma - ConectaLab.xlsx"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+
+                <article class="document-card" data-category="tecnico">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-file-code"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Técnico
+                        </span>
+                    </div>
+
+                    <h3>4. Plano de negócios 
+                    </h3>
+
+                    <p>
+                       Planejamento do negócio, definição do modelo de negócio, análise do
+                       público-alvo, proposta de valor, parceiros e estrutura do projeto.
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            <i class="fa-solid fa-file-pdf"></i>
+                            PDF
+                        </span>
+
+                        <a href="documentos/4. PLANO DE NEGÓCIOS (CANVAS + BMC) (1).pdf"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <article class="document-card" data-category="tecnico">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-file-code"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Técnico
+                        </span>
+                    </div>
+
+                    <h3>4. CANVA Plano de negócios 
+                    </h3>
+
+                    <p>
+                       Planejamento do negócio, definição do modelo de negócio, análise do
+                       público-alvo, proposta de valor, parceiros e estrutura do projeto.
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            PNG
+                        </span>
+
+                       <a href="documentos/CANVA_proposta_de_valor.png"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+
+                    <article class="document-card" data-category="design">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Técnico
+                        </span>
+                    </div>
+
+                    <h3>Formulário forms</h3>
+
+                    <p>
+                        Coleta de informações e opiniões dos professores, buscando identificar
+                         necessidades, dificuldades e sugestões relacionadas ao gerenciamento 
+                         do laboratório.
+
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            LINK
+                        </span>
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSexUxDphyvo_nLZsk3RDZCpijOM4fCYdBT-YhVdxANOgAWe1A/viewform?pli=1"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+                <article class="document-card" data-category="planejamento">
+
+                    <div class="document-top">
+                        <div class="document-icon blue-light">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Design
+                        </span>
+                    </div>
+
+                    <h3>5. Documentação técnica</h3>
+
+                    <p>
+                       Registro da estrutura do sistema, com esquemas, desenhos, diagramas e
+                        representações técnicas utilizadas no desenvolvimento do projeto.
+
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            <i class="fa-solid fa-file-pdf"></i>
+                            PDF
+                        </span>
+
+                        <a href="documentos/5. DOCUMENTAÇÃO TÉCNICA (ESQUEMAS, DESENHOS e PROGRAMAS).pdf"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+
+                <article class="document-card" data-category="design">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Design
+                        </span>
+                    </div>
+
+                    <h3>Fluxograma</h3>
+
+                    <p>
+                        Representação visual dos principais processos
+                        e fluxos do sistema.
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            LINK
+                        </span>
+
+                        <a href="https://miro.com/app/board/uXjVHwYhEsQ=/?share_link_id=743397267745"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <article class="document-card" data-category="design">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+
+                        <span class="document-type">
+                            planejamento
+                        </span>
+                    </div>
+
+                    <h3>7. Planilha de custos</h3>
+
+                    <p>
+                        Levantamento e organização dos custos do projeto, incluindo despesas, 
+                        recursos necessários e valores estimados para o desenvolvimento do sistema.
+
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            <i class="fa-solid fa-file-pdf"></i>
+                            PDF
+                        </span>
+
+                        <a href="documentos/7. ESPECIFICAÇÕES (PLANILHAS DE CUSTOS).pdf"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <article class="document-card" data-category="design">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+
+                        <span class="document-type">
+                            planejamento
+                        </span>
+                    </div>
+
+                    <h3>EXEL Planilha de custos </h3>
+
+                    <p>
+                        Organização dos custos do projeto em planilha, com registro das despesas, 
+                        recursos necessários e valores estimados para o desenvolvimento.
+
+
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                            EXEL
+                        </span>
+
+                        <a href="documentos/Planilha de Custos  .xlsx"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+
+
+                <article class="document-card" data-category="design">
+
+                    <div class="document-top">
+                        <div class="document-icon blue">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+
+                        <span class="document-type">
+                            Técnico
+                        </span>
+                    </div>
+
+                    <h3>9. Introdução do artigo </h3>
+
+                    <p>
+                        Apresentação do projeto e contextualização do problema, com informações 
+                        e pesquisas técnicas que fundamentam o desenvolvimento do sistema.
+                    </p>
+
+                    <div class="document-footer">
+                        <span>
+                             <i class="fa-solid fa-file-pdf"></i>
+                            PDF
+                        </span>
+
+                        <a href="documentos/Revista Técnica - Sistema de Gerenciamento de Laboratórios.pdf"
+                           target="_blank"
+                           class="open-button">
+                            Abrir
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SOBRE O PROJETO
+        ================================================== -->
+
+        <section id="projeto" class="section about-section">
+
+            <div class="section-header">
+                <span class="section-label">SOBRE</span>
+                <h2>O projeto</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+                    <h3>Matéria Reativa</h3>
+
+                    <p>
+                        O Matéria Reativa é um sistema desenvolvido como
+                        projeto de conclusão de curso no SENAI, com foco
+                        na organização e automatização dos processos
+                        relacionados ao controle de produtos químicos
+                        em laboratório.
+                    </p>
+
+                    <p>
+                        A plataforma busca facilitar o gerenciamento de
+                        produtos, estoque, fornecedores, solicitações,
+                        compras, validade, alertas e relatórios.
+                    </p>
+                </div>
+
+                <div class="about-features">
+
+                    <div>
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <span>Controle de estoque</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <span>Alertas de validade</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Solicitações e compras</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-chart-column"></i>
+                        <span>Relatórios</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EQUIPE
+        ================================================== -->
+
+        <section id="equipe" class="section">
+
+            <div class="section-header">
+                <span class="section-label">DESENVOLVIMENTO</span>
+                <h2>Equipe</h2>
+                <p>Organização das funções dentro do projeto.</p>
+            </div>
+
+            <div class="team-grid">
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3>Gerente de Projetos</h3>
+                    <p>Rebeca Rezende Machado</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Desenvolvedor Bsack-end</h3>
+                    <p>Ana Luísa Silva Andrade</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3>Desenvolvedor Front-end</h3>
+                    <p>Giovanni Augusto Crusca Favalli</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3>Designer</h3>
+                    <p>Emily Almeida de Oliveira</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h3>Analista de Requisitos</h3>
+                    <p>Davi Oliveira Barbosa</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3>Analista de documentação</h3>
+                    <p>Isasbelly Aparecida Costa</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RODAPÉ
+        ================================================== -->
+
+        <footer>
+
+            <div class="footer-logo">
+                <i class="fa-solid fa-flask"></i>
+
+                <span>
+                    <strong>Matéria Reativa</strong>
+                    <small>SENAI • Desenvolvimento de Sistemas</small>
+                </span>
+            </div>
+
+            <p>
+                Projeto desenvolvido para conclusão de curso.
+            </p>
+
+        </footer>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
